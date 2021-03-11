@@ -1,0 +1,2 @@
+C:\Users\bvail\Documents\GitHub\C++_COP2224_70645_Fall2020\Coursework\Week01\Chapter06\Chapter06_01_MathLibraryFunctions\Debug\Chapter06_01_MathLibraryFunctions.exe
+C:\Users\bvail\Documents\GitHub\C++_COP2224_70645_Fall2020\Coursework\Week01\Chapter06\Chapter06_01_MathLibraryFunctions\Debug\Chapter06_01_MathLibraryFunctions.pdb

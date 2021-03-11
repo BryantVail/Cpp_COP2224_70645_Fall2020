@@ -1,0 +1,59 @@
+9:01 PM 2/9/2021
+-----------------------
+video: {
+	link: "https://www.youtube.com/watch?v=DTxHyVn0ODg", 
+	name: "Pointers in C++", 
+	creator: "The Cherno", 
+}, 
+
+pointer is JUST a location and doesn't NEED a type, 
+
+
+code: 
+	int variable = 8; // this has a memory address
+
+	void* nullPointer = 0; // memory address of 0/nullptr, not valid
+	void* variablePointer = &variable;
+
+View memory values: 
+	Debug > Windows > Memory > memory1
+
+
+
+---------------------
+pointers are just integers that store memory address, 
+
+memset(
+	pointerToBlockOfMemory, 
+	ValueToBeSetThere, 
+	NumberOfBytesAsUnsignedIntegralType);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

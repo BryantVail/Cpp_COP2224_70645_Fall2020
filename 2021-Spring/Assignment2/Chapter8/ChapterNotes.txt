@@ -1,0 +1,94 @@
+1:01 AM 2/11/2021
+-------------------
+
+declare: 
+	int* countPointer, count; // count is an int variable
+
+
+
+_____________________________
+8.2.3 Null Pointers Prior to C++11
+----------
+
+0 or 'NULL' was the value to assign 'null pointer'
+
+
+______________________________
+8.3 Pointer Operators: 
+----------
+- '&' and '*' are used to create pointer values 
+  and 'de-reference' pointers respectively
+
+______________________________
+8.3.1 Address '&' Operator: 
+----------
+
+int y{5}; // variable
+int* yPointer{nullptr}; // declare pointer variable with 'nullptr' keyword
+
+yPointer = &y; // assign address of y to yPointer
+
+
+_____________________________
+8.3.2 Indirection * Operator
+
+*: 'indirection' Operator or 'de-referencing' operator
+
+cout << *yPointer << endl; // returns the value at the memory location
+
+
+_____________________________
+8.4, page: 1040
+Pass-By-Reference with Pointers
+
+_____________________________
+8.7, sizeof operator
+
+sizeof numbers / sizeof(numbers[0])
+
+_____________________________
+8.8, pointer arithmetic
+
+same: 
+	int* vPointer{v};
+	int* vPointer{&v[0]};
+
+--------------
+8.8.1: Adding integers to and subtracting from Pointers
+
+vPointer +=2; // valueOfvPointerLocation + 2*4; assuming 4 bytes of mem @locale
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

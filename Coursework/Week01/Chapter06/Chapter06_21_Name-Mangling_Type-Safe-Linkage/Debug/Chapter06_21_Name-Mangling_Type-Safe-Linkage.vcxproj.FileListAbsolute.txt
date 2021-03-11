@@ -1,0 +1,2 @@
+C:\Users\bvail\Documents\GitHub\C++_COP2224_70645_Fall2020\Coursework\Week01\Chapter06\Chapter06_21_Name-Mangling_Type-Safe-Linkage\Debug\Chapter06_21_Name-Mangling_Type-Safe-Linkage.exe
+C:\Users\bvail\Documents\GitHub\C++_COP2224_70645_Fall2020\Coursework\Week01\Chapter06\Chapter06_21_Name-Mangling_Type-Safe-Linkage\Debug\Chapter06_21_Name-Mangling_Type-Safe-Linkage.pdb

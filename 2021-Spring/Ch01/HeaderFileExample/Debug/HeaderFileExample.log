@@ -1,0 +1,11 @@
+﻿  HeaderFileExample.cpp
+C:\Users\bvail\Documents\GitHub\C++_COP2224_70645_Fall2020\2021-Spring\Ch01\HeaderFileExample\HeaderFileExample.cpp(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\bvail\Documents\GitHub\C++_COP2224_70645_Fall2020\2021-Spring\Ch01\HeaderFileExample\HeaderFileExample.cpp(8,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\bvail\Documents\GitHub\C++_COP2224_70645_Fall2020\2021-Spring\Ch01\HeaderFileExample\Log.h(10,31): error C2084: function 'void Log(const char *)' already has a body
+C:\Users\bvail\Documents\GitHub\C++_COP2224_70645_Fall2020\2021-Spring\Ch01\HeaderFileExample\Log.h(10): message : see previous definition of 'Log'
+C:\Users\bvail\Documents\GitHub\C++_COP2224_70645_Fall2020\2021-Spring\Ch01\HeaderFileExample\Log.h(16,15): error C2011: 'Player': 'struct' type redefinition
+C:\Users\bvail\Documents\GitHub\C++_COP2224_70645_Fall2020\2021-Spring\Ch01\HeaderFileExample\Log.h(16): message : see declaration of 'Player'
+C:\Users\bvail\Documents\GitHub\C++_COP2224_70645_Fall2020\2021-Spring\Ch01\HeaderFileExample\HeaderFileExample.cpp(12,2): error C2065: 'Log': undeclared identifier
+  Log.cpp
+C:\Users\bvail\Documents\GitHub\C++_COP2224_70645_Fall2020\2021-Spring\Ch01\HeaderFileExample\Log.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating Code...

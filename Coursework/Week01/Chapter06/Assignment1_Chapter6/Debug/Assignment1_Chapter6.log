@@ -1,0 +1,5 @@
+﻿  SpeedTrapFunctions.cpp
+C:\Users\bvail\Documents\GitHub\C++_COP2224_70645_Fall2020\Coursework\Week01\Chapter06\Assignment1_Chapter6\SpeedTrapFunctions.cpp(127,26): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\bvail\Documents\GitHub\C++_COP2224_70645_Fall2020\Coursework\Week01\Chapter06\Assignment1_Chapter6\SpeedTrapFunctions.cpp(132,25): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\bvail\Documents\GitHub\C++_COP2224_70645_Fall2020\Coursework\Week01\Chapter06\Assignment1_Chapter6\SpeedTrapFunctions.cpp(137,25): warning C4305: '=': truncation from 'double' to 'float'
+  Assignment1_Chapter6.vcxproj -> C:\Users\bvail\Documents\GitHub\C++_COP2224_70645_Fall2020\Coursework\Week01\Chapter06\Assignment1_Chapter6\Debug\Assignment1_Chapter6.exe

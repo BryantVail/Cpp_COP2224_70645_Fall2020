@@ -1,0 +1,55 @@
+11:39 PM 3/2/2021
+-------------------------
+9.4: 
+
+Accessing 'public' Class Members Through Objects, References & Pointers
+
+Consider an Account class that has a public 'setBalance'
+member function. 
+
+Account account; // an Account object
+
+// accountRef refers to an Account object
+Account& accountRef(account);
+
+// accountPtr points to an Account object
+Account* accountPtr(&account);
+
+
+____________________
+
+// call setBalance via the Account object
+account.setBalance(123.45);
+
+// call setBalance via a ref to the Account object
+accountRef.setBalance(123.45);
+
+// call setBalance via a pointer to the Account object
+accountPtr->setBalance(123.45);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
