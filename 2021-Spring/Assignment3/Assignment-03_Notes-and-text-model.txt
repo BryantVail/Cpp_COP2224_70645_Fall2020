@@ -1,0 +1,87 @@
+9:32 PM 3/10/2021
+---------------------
+Assignment 3: 
+	- 
+// base class: 
+class Rectangle{
+public: 
+	unsigned float getArea() const;
+	unsigned float getPerimeter() const;
+private:
+	unsigned float sideA;
+	unsigned float sideB;
+};
+
+
+// derived class
+class Square{
+public:
+	
+private:
+	
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
