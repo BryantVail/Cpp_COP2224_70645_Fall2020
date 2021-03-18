@@ -9,8 +9,12 @@
 #include <string>
 
 class PhoneNumber {
-	friend std::ostream& operator<<(std::ostream&, const PhoneNumber&);
-	friend std::istream& operator>>(std::istream&, PhoneNumber&);
+	friend std::ostream& operator<<(
+		std::ostream&, 
+		const PhoneNumber& ); 
+	friend std::istream& operator>>(
+		std::istream&, 
+		PhoneNumber& );
 private:
 	std::string areaCode;	// 3-digit
 	std::string exchange;	// 3-digit

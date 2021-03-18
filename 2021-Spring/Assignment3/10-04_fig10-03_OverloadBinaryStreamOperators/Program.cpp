@@ -21,13 +21,13 @@ int main()
     cin >> phoneNumber;
 
     cout
-        << "\n\nThe PhoneNumber Entered"
+        << "\n\nThe PhoneNumber Entered "
         << "was:\n\n";
 
     // cout << phoneNumber invokes operator<<
     // implicitly issuing the non-member
     // function call operator<<(cout, phoneNumber)
-
+    cout << phoneNumber << endl;
 
 
 }

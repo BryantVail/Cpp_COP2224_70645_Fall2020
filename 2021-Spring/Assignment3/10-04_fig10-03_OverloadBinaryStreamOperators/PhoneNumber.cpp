@@ -13,7 +13,7 @@ ostream& operator<<(ostream& output, const PhoneNumber& number) {
 	output
 		<< "Area Code:\t" << number.areaCode << "\n"
 		<< "Exchange:\t" << number.exchange << "\n"
-		<< "Line:\t" << number.line << "\n"
+		<< "Line:\t\t" << number.line << "\n"
 		<< "(" << number.areaCode << ") "
 		<< number.exchange << "-"
 		<< number.line << "\n";
