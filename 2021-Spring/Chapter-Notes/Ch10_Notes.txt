@@ -1,0 +1,324 @@
+5:39 AM 3/16/2021
+--------------------
+Chapter 10:
+
+
+
+
+____________________
+10.4 Overloading Binary Operators:
+
+
+--------------------
+"Binary Overloaded Operators as Member Functions":
+
+
+class String{
+public:
+	bool operator<(const String&) const;
+	// ...
+};
+
+--------------------
+"Binary Overloaded Operators as Non-Member Functions":
+
+bool operator<(const String& y, const String& z);
+
+
+
+____________________
+10.5 Overloading the Binary Stream 
+     Insertion/Extraction Operators:
+
+
+
+____________________
+1:53 AM 3/21/2021
+10.6 Overloading Unary Operators: 
+
+Unary Operator can be Overloaded as: 
+	1. non-static member function with NO arguments
+		- must be non-static so they can access
+		  the non-static data within the instance.
+	2. non-member function w/1 argument that MUST BE
+	   an object -or reference to one- of the class.
+
+
+--------------------
+Unary Overloaded Operators as 
+Member Functions:
+2:00 AM 3/21/2021
+
+No Argument Overload: 
+/*
+
+class StringObject {
+public:
+    bool operator!() const;
+    ...
+};
+
+// compiler reads: stringObject.operator!()
+// when the overload is run.
+*/
+
+--------------------
+Unary Overloaded Operators as 
+Non-Member Functions:
+2:08 AM 3/21/2021
+
+definition for non-member 'operator!'
+override: 
+- 'bool operator!(const StringObject&);'
+
+----------------------
+Overloading the Prefix Increment Operator:
+
+definition of member function override: 
+- 'Date& operator++();'
+
+non-member function: 
+- compiler sees: 
+	- 'operator++(dl)'
+- Prototype: 
+	- 'Date& operator++(Date&);'
+
+
+--------------------------
+Overloading the Postfix Increment: 
+
+Member Function:
+objectType++ => compiler => objectType.operator++(0)
+
+Prototype: 
+- Date operator++(int);
+
+- - - - - -
+Non-Member function:
+- compiler sees: 
+	- operator++(dl, 0)
+
+Prototype:
+- Date operator++(Date&, int);
+
+
+_____________________________________
+12:01 AM 3/24/2021
+10.9
+Dynamic Memory Management:
+- - -
+
+- Free Store = Heap;
+- new & delete Operators for Dynamic 
+  Memory Management
+- bad_alloc Exception
+- 'new' & 'delete' can be overloaded
+
+
+-----------------------------------
+12:13 AM 3/24/2021
+Obtaining Dynamic Memory w/'new':
+- - -
+
+Allocate Memory for Object: 
+	- Time* timePtr{new Time};
+
+Delete: 
+	- delete timePtr;
+
+----------------------------------
+Initializing Dynamic Memory: 
+- - -
+- 
+
+// init new double to pi to 5th degree
+double* prt{new double{3.14159}};
+
+// constructor use
+Time* timePtr{new Time{12,45,0}};
+
+
+---------------------------------
+Dynamically Allocating Built-In Arrays
+With new[]:
+- - -
+
+int* gradesAray{new int[10]{}};
+
+----------------------------------
+Releasing Dynamically Allocated Built-In Arrays
+With 'delete[]': 
+- - -
+
+- delete[] gradesArray;
+
+
+------------------------------------
+Managing Dynamically Allocated Memory
+With unique_ptr:
+- - -
+- When 'unique_ptr' goes out of scope, it's destructor
+  automatically returns the managed memory to the 'free 
+  store', or 'heap'.
+
+____________________________________
+1:08 AM 3/24/2021
+10.10,
+Case Study: Array Class, 
+- - -
+
+- No Bounds Checking
+	- can "walk off" either end of 'built-in' array
+- Two Built-In arrays cannot be meaningfully compared
+  b/c they are just pointers to the beginning of the
+  array, so the two will ALWAYS have different
+  **Memory Locations**
+	- aligning with not being able to compare 2 instances
+	  with each other: cannot be assigned to another using 
+		assignment operators.
+- entire built-in array cannot be input or output all 
+  at once; each element must be read/written individ-
+	ally or 'one at a time'.
+- Passing a Built-In Array into a general purpose function
+  requires also passing in the size because the BI Array is 
+	not self aware in this way.
+
+
+____________________________________
+2:40 AM 3/24/2021
+10.10.1
+Using the Array Class 
+(Building the Array Class)
+- - -
+
+
+------------------------------------
+3:41 AM 3/24/2021
+Creating Arrays, Outputting Their Size, 
+and Displaying Their Contents:
+- - -
+
+- Array objects instantiated to Zeros to 
+  the size of the array at init. 
+
+------------------------------------
+Using the Overloaded Stream Extraction Operator 
+to Fill an Array: 
+- - -
+
+overloaded operator>> fills the array from input until
+its full, then passes control back to the program to 
+continue on to the next Array/Statement
+
+------------------------------------
+Using the Overloaded Inequality Operator: 
+- - -
+integers1 != integers2;
+output shows that the values are not equal
+
+------------------------------------
+Initializing a New Array w/a Copy of 
+an Existing Array's Contents:
+- - -
+
+Array integers3 = integers1;
+// This form is NOT the assignment operator. 
+// This form is passing a single argument/object
+// 		to the new Object's constructor
+
+------------------------------------------
+Using the Overloaded Assignment Operator: 
+- - -
+
+integers1 = integers2;
+// overloaded assignment operator is invoked 
+// 		when the two objects have already been 
+//		instantiated.
+
+------------------------------------------
+Using the Overloaded Equality Operator:
+- - -
+line 51, 
+"=="
+
+----------------------------------------
+Using the Overloaded Subscript Operator:
+- - -
+
+- can overload such that input would not 
+  be limited to integers, and can even be
+	specific object types
+
+
+	____________________________________
+	10.10.2 Array Class Definition: 
+	- - -
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
