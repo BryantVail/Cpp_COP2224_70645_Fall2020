@@ -12,6 +12,7 @@ class Array {
 	friend std::istream& operator>>(std::istream&, Array&);
 
 public:
+	// line 13 in book
 	explicit Array(int = 10); // default constructor
 	Array(const Array&); // copy constructor
 	~Array(); // destructor

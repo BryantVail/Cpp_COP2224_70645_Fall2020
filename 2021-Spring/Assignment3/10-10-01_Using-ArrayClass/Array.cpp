@@ -5,9 +5,11 @@
 #include "Array.h"
 using namespace std;
 
+// lines 11-14
 // default constructor (default size: 10)
 Array::Array(int arraySize)
 	: size{ (arraySize > 0 
+		// cast to size_t, efficient unsigned int
 		? static_cast<size_t>(arraySize) 
 		: throw invalid_argument{
 			"Array size must be greater than Zero/0"})},
@@ -40,9 +42,9 @@ size_t Array::getSize() const {
 const Array& Array::operator=(const Array& right) {
 	if (&right != this) {
 		// avoid self-assignment
-		// for Arrays of different sizes, deallocate original
+		// for Arrays of different sizes, de-allocate original
 		// left-side Array, then allocate new left-side Array
-		if (size != right.size) {
+		if (this->size != right.size) {
 			delete[] ptr; // release space
 			size = right.size; // resize this object
 			ptr = new int[size]; // create space for Array copy
@@ -97,17 +99,18 @@ int Array::operator[](int subscript) const {
 }
 
 
+// lines 95-101 in book
 // overloaded input operator
 // inputs values for entire Array
-istream& operator>>(istream& input, Array& arry) {
+istream& operator>>(istream& cinInput, Array& arry) {
 	for (size_t i{ 0 }; i < arry.size; ++i) {
-		input >> arry.ptr[i];
+		cinInput >> arry.ptr[i];
 	}
 
-	return input;
+	return cinInput;
 }
 
-
+// lines 104-112 in book
 // overloaded output operator
 ostream& operator<<(ostream& output, const Array& arry) {
 	//output private ptr-based Array

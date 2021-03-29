@@ -11,6 +11,7 @@ using namespace std;
 int main()
 {
     Array integers1{ 7 }; // seven element array
+    // line 10 in book
     Array integers2; // 10-element Array by default
 
     // print integers1 size & contents
@@ -62,6 +63,7 @@ int main()
     cout
         << "\nAssigning integers 2 to integers1:\n";
 
+    // line 37 in book
     integers1 = integers2; // note target is smaller
 
     cout
