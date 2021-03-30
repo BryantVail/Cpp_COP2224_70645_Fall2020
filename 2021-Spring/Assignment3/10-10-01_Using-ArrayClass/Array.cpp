@@ -39,19 +39,22 @@ size_t Array::getSize() const {
 
 // overloaded assignment operator: 
 // const return avoids:(?) (a1 = a2) = a3
-const Array& Array::operator=(const Array& right) {
-	if (&right != this) {
+/* steps: [ 
+	 changeArraySizeIfNecessary(), 
+	 assignValuesToNewlySizedArrayPointerMemSlots() ]	*/
+const Array& Array::operator=(const Array& arrayToTheRightOfOperator) {
+	if (&arrayToTheRightOfOperator != this) {
 		// avoid self-assignment
 		// for Arrays of different sizes, de-allocate original
 		// left-side Array, then allocate new left-side Array
-		if (this->size != right.size) {
-			delete[] ptr; // release space
-			size = right.size; // resize this object
-			ptr = new int[size]; // create space for Array copy
+		if (this->size != arrayToTheRightOfOperator.size) {
+			delete[] this->ptr; // release space
+			this->size = arrayToTheRightOfOperator.size; // resize this object
+			this->ptr = new int[this->size]; // create space for Array copy
 		}
 
 		for (size_t i{ 0 }; i < size; ++i) {
-			ptr[i] = right.ptr[i]; // copy array over
+			ptr[i] = arrayToTheRightOfOperator.ptr[i]; // copy array over
 		}
 	}
 
