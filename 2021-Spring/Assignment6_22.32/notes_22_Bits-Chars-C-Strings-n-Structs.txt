@@ -1,0 +1,23 @@
+9:22 PM 4/25/2021
+---------------------
+22.01 intro: 
+- page: 2535, 
+22.12 Wrap-Up:
+- page: 2619
+_________________
+22.01 Intro:
+___
+
+legacy c, c++ code
+- 
+
+going forward: 
+- use C++ string objects
+
+Common Programming Error: 
+- 22.1
+- Comparing Variables of Structure types 
+  is a Compilation error.
+
+
+________________

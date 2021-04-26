@@ -37,6 +37,7 @@ size_t Array::getSize() const {
 	return this->size;
 }
 
+// line#37-53 in book
 // overloaded assignment operator: 
 // const return avoids:(?) (a1 = a2) = a3
 /* steps: [ 

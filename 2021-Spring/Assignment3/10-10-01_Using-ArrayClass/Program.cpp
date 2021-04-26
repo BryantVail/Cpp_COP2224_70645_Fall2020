@@ -63,7 +63,7 @@ int main()
     cout
         << "\nAssigning integers 2 to integers1:\n";
 
-    // line 37 in book
+    // line#44 in book
     integers1 = integers2; // note target is smaller
 
     cout

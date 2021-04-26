@@ -27,6 +27,10 @@ public:
 		return !(*this == right); // invokes Array::operator==
 	}
 
+	// line# 27 & 30
+	// const & non-const are necessary for
+	// 	different circumstances: 
+	//	ex: integerObject.operator[](5);  
 	// subscript operator for non-const objects
 	// returns modifiable lvalue
 	int& operator[](int);
