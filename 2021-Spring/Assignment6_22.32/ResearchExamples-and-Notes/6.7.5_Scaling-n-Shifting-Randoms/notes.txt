@@ -1,0 +1,27 @@
+// notes
+// 6.7.5
+// Scaling and Shifting Random Numbers
+
+statementForShiftAndScale: 
+  "unsigned int face{1+rand() % 6};"
+definitionOfStatement: 
+  "type variableName{shiftingValue + rand() % scalingFactor};"
+    - scalingFactor: the width, range, 
+      or 1/1 for the result of the random calculation. 
+    - shiftingValue: equal to the first
+      number in the desired range of consecutive integers; 
+      shiftingValue == firstNumberInRange;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

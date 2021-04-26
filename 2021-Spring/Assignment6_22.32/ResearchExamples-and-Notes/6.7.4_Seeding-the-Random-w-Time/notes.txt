@@ -1,0 +1,15 @@
+// notes
+
+Randomize with time
+  "srand(static_cast<unsigned int>(time(0)));"
+    - time(0) typically returns epoch time, or 
+      epoch time: int seconds since 01/01/1970, midnight, Greenwich Mean Time (GMT +/-00:00)
+
+
+
+
+
+
+
+
+

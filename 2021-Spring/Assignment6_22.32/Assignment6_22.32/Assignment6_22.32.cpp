@@ -5,6 +5,9 @@
 
 int main()
 {
+    // initialize random engine
+    srand(static_cast<unsigned int>(time(0)));
+
     const char* article[]{ "the", "a", "one", "some", "any" };
     const char* noun[]{ "boy", "girl", "dog", "town", "car" };
     const char* verb[]{ "drove", "jumped", "ran", "walked", "skipped" };

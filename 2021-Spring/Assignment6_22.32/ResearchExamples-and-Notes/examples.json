@@ -1,0 +1,10 @@
+[
+  {
+    "url": "https://www.cplusplus.com/reference/cstdlib/srand/",
+    "commonExampleName": "srand() explained",
+    "description": "cplusplus.com/reference",
+    "notes":[
+      "srand() is used with 'rand()' to continue producing a pseudo-random seed [my best understanding of the text]."
+    ]
+  }
+]

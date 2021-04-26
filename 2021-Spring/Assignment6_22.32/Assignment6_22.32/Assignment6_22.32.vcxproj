@@ -140,6 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Assignment6_22.32.cpp" />
+    <ClCompile Include="RandomArrayEvaluation.cpp" />
+    <ClCompile Include="RandomSentenceGeneration.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RandomArrayEvaluation.h" />
+    <ClInclude Include="RandomSentenceGeneration.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
