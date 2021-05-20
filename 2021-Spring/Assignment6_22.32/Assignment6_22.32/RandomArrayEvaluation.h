@@ -2,15 +2,17 @@
 #ifndef RandomArrayEvaluation_h
 #define RandomArrayEvaluation_h
 
-
 #include <cstring>
 
-class RandomArrayEvaluation {
+class RandomArrayEvaluation
+{
 public:
-	const char* returnRandomIndex(char* arrayPtr[], int length);
+	const char *returnRandomIndex();
+
+	RandomArrayEvaluation(char *arrayPtr[], unsigned int length);
+
+	char sentence[100]{};
+	unsigned int length;
 };
-
-
-
 
 #endif

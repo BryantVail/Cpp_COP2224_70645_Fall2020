@@ -11,7 +11,7 @@ toDo: [
   // macro
   "CreateClass",
   "create sentences",
-  "random number generation",
+  "random number generation", // x
 
   // micro
   "use four arrays of pointers to char called article, noun, verb and preposition.",
@@ -22,8 +22,30 @@ toDo: [
     4. preposition, 
     5. article and 
     6. noun.",
-  "should be concatinated to the previous words in a character array that's large enough to hold the entire sentence.", 
-  "The words should be separated by spaces",
-  "When the final sentence is output, it should start with a capital letter and end with a period",
+  "should be concatinated to the previous words in a character array that's large enough to hold the entire sentence.", // x
+  "The words should be separated by spaces", // x
+  "When the final sentence is output, it should 
+    start with a capital letter and 
+    end with a period",
   "generate 20 such sentences."
 ]
+
+
+pseudoCode: 
+
+class SentenceCreation: {
+public returnRandomValueByIndex()
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
