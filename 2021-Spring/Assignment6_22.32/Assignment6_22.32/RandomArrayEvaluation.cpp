@@ -1,19 +1,18 @@
 // RandomArrayEvaluation.cpp
 
-
 #include <cstring>
 #include <cstdlib>
 
 #include "RandomArrayEvaluation.h"
 
-const char* RandomArrayEvaluation::returnRandomIndex(
-	char* arrayPtr[],
-	int length) {
-	return arrayPtr[(1 + (rand() % length))];
-}
+//RandomArrayEvaluation::RandomArrayEvaluation(
+//		char *arrayPtr, int length)
+//{
+//
+//	//this->sentence = arrayPtr;
+//}
 
-
-
-
-
-
+//const char *RandomArrayEvaluation ::returnRandomIndex()
+//{
+	//return arrayPtr[(rand() % (length - 1))];
+//}

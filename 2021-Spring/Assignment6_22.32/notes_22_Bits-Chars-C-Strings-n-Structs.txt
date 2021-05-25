@@ -4,7 +4,7 @@
 - page: 2535, 
 22.12 Wrap-Up:
 - page: 2619
-_________________
+______________________________
 22.01 Intro:
 ___
 
@@ -20,7 +20,7 @@ Common Programming Error:
   is a Compilation error.
 
 
-_________________
+______________________________
 22.3 typedef and using 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 
 
-_________________
+______________________________
 22.7
 Character Handling Library: 
 ___
@@ -38,7 +38,7 @@ ___
 Fig. 22.17 Character-handling library functions:
 _ _ _ _ _ 
 
-_____________________
+______________________________
 1. Prototype 
 2. Description
 - - -
@@ -93,5 +93,25 @@ otherwise.
 int isgraph(int c)
 Returns 1 if c is a printing character other than space ( '' ) and 0
 otherwise.
+
+
+______________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
